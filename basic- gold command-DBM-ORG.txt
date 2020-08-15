@@ -1,0 +1,25 @@
+{
+  "name": "Gold",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "gold",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "myGold",
+      "name": "Store Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${member}, you currently have ${tempVars(\"myGold\")} gold.",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "_id": "HxFGV"
+}

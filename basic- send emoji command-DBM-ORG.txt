@@ -1,0 +1,16 @@
+{
+  "name": "SendEmoji",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "To send emojis, all you must do is: `:emoji-name:`\n\n:smile: :thumbsup:",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "_id": "wgREs"
+}

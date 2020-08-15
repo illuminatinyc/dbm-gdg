@@ -1,0 +1,16 @@
+{
+  "name": "LeaveMessage",
+  "temp": "member",
+  "event-type": "7",
+  "actions": [
+    {
+      "channel": "4",
+      "varName": "",
+      "message": "${tempVars(\"member\")} left the server...",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "_id": "qLtvs"
+}

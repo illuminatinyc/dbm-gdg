@@ -1,0 +1,22 @@
+{
+  "name": "SendImage",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "url": "http://i.imgur.com/WM2lj00.png",
+      "storage": "1",
+      "varName": "img",
+      "name": "Create Image"
+    },
+    {
+      "storage": "1",
+      "varName": "img",
+      "channel": "0",
+      "varName2": "",
+      "message": "",
+      "name": "Send Image"
+    }
+  ],
+  "_id": "oTBNY"
+}
