@@ -1,0 +1,83 @@
+{
+  "name": "RoleInfo",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "```\nInsert a role name to get info about it:\n!RoleInfo [role-name]\n```",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "roleName",
+      "name": "Store Command Params"
+    },
+    {
+      "info": "1",
+      "find": "${tempVars(\"roleName\")}",
+      "storage": "1",
+      "varName": "role",
+      "name": "Find Role"
+    },
+    {
+      "role": "3",
+      "varName": "role",
+      "info": "1",
+      "storage": "1",
+      "varName2": "id",
+      "name": "Store Role Info"
+    },
+    {
+      "role": "3",
+      "varName": "role",
+      "info": "3",
+      "storage": "1",
+      "varName2": "color",
+      "name": "Store Role Info"
+    },
+    {
+      "role": "3",
+      "varName": "role",
+      "info": "4",
+      "storage": "1",
+      "varName2": "position",
+      "name": "Store Role Info"
+    },
+    {
+      "role": "3",
+      "varName": "role",
+      "info": "5",
+      "storage": "1"
+      "varName2": "timestamp",
+      "name": "Store Role Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "```\nName:      ${tempVars(\"roleName\")}\nID:        ${tempVars(\"id\")}\nColor:     ${tempVars(\"color\")}\nPosition:  ${tempVars(\"position\")}\nTimestamp: ${tempVars(\"timestamp\")}\n```",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "_id": "RWSTz"
+}

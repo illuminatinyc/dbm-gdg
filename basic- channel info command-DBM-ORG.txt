@@ -1,0 +1,48 @@
+{
+  "name": "ChannelInfo",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "name",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "id",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "5",
+      "storage": "1",
+      "varName2": "position",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "3",
+      "storage": "1",
+      "varName2": "topic",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "```\nName:     ${tempVars(\"name\")}\nID:       ${tempVars(\"id\")}\nPosition: ${tempVars(\"position\")}\nTopic:    ${tempVars(\"topic\") || \"None\"}\n```",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "_id": "QsqAC"
+}
