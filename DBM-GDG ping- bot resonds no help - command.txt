@@ -1,0 +1,25 @@
+{
+  "name": "ping",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "nffXq",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "Cyborg 3.0",
+      "name": "Get Bot as Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Message from ${tempVars(\"Cyborg 3.0\")}\nSorry ${member.displayName} Don't want to help you right now, all my bits are messed up and I feel lazy.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ]
+}
